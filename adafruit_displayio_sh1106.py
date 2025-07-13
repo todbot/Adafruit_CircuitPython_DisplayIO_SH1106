@@ -45,6 +45,7 @@ _INIT_SEQUENCE = (
     b"\xd3\x01\x00"  # set display offset mode = 0x0
     b"\x40\x00"  # set start line
     b"\xad\x01\x8b"  # turn on DC/DC
+    b"\x8d\x01\x14"  # turn on charge pump = 0x14, externl vcc = 0x10
     b"\xa1\x00"  # segment remap = 1 (POR=0, down rotation)
     b"\xc8\x00"  # scan decrement
     b"\xda\x01\x12"  # set com pins
